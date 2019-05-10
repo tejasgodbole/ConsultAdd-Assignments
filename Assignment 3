@@ -1,0 +1,69 @@
+import random
+OTP= random.randint(1,20)
+print(OTP)
+
+FirstName= input('enter your first name - ')
+LastName= input('enter your last name - ')
+
+number= int(input('enter any number between 1 to 20- '))
+
+
+if number>20:
+    print("wrong input, Please try again")
+
+while True:
+    
+    if number==OTP:
+        print("OTP SUCCESSFULLY MATCHED")
+        raise SystemExit
+
+    else:
+        print("ERROR!!! ENTER THE OTP AGAIN")
+        break
+
+while True:
+    a = input("Enter yes/no to continue - ")
+    if a=="yes":
+        number
+    elif a=="no":
+        print("Thanks for attempt")
+    break
+    
+#OTP first time
+
+number= int(input('enter any number between 1 to 20- '))
+
+while True:
+    if number==OTP:
+        print("OTP SUCCESSFULLY MATCHED")
+        break
+
+    else:
+        print("ERROR!!! ENTER THE OTP AGAIN")
+        break 
+
+#OTP second time
+
+number= int(input('enter any number between 1 to 20- '))
+
+while True:
+    if number==OTP:
+        print("OTP SUCCESSFULLY MATCHED")
+        break
+
+    else:
+        print("ERROR!!! ENTER THE OTP AGAIN")
+        break 
+
+#OTP third time
+
+number= int(input('enter any number between 1 to 20- '))
+
+while True:
+    if number==OTP:
+        print("OTP SUCCESSFULLY MATCHED")
+        break
+
+    else:
+        print("SORRY PROGRAM CRASHED")
+        break
